@@ -23,6 +23,38 @@ namespace Sakklepesek_BerkesKristof
         public MainWindow()
         {
             InitializeComponent();
+
+            for (int i = 0; i < 8; i++)
+            {
+                tabla.RowDefinitions.Add(new RowDefinition());
+                tabla.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Rectangle mezo = new Rectangle();
+                    tabla.Children.Add(mezo);
+                    if (i % 2 == 1 && j % 2 == 0)
+                    {
+                        mezo.Fill = Brushes.White;
+                        mezo.Stroke = Brushes.Black;
+                    }
+                    else if (i % 2 == 0 && j % 2 == 1)
+                    {
+                        mezo.Fill = Brushes.White;
+                        mezo.Stroke = Brushes.Black;
+                    }
+                    else
+                    {
+                        mezo.Fill = Brushes.Black;
+                        mezo.Stroke = Brushes.Black;
+                    }
+                    Grid.SetRow(mezo, j);
+                    Grid.SetColumn(mezo, i);
+                }
+            }
         }
     }
 }

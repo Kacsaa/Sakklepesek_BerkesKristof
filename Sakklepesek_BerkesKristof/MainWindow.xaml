@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sakklepesek_BerkesKristof"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Sakklépések - Berkes Kristóf" Height="600" Width="450">
+    <Grid Margin="0,221,35,0">
+        <Grid Name="tabla" Margin="36,-134,10,124"></Grid>
     </Grid>
 </Window>
