@@ -1,0 +1,15 @@
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\bin\Debug\Sakklepesek_BerkesKristof.exe.config
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\bin\Debug\Sakklepesek_BerkesKristof.exe
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\bin\Debug\Sakklepesek_BerkesKristof.pdb
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.csproj.AssemblyReference.cache
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\MainWindow.g.cs
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\App.g.cs
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof_MarkupCompile.cache
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof_MarkupCompile.lref
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\MainWindow.baml
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.g.resources
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.Properties.Resources.resources
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.csproj.GenerateResource.cache
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.csproj.CoreCompileInputs.cache
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.exe
+D:\Komplex prog\Sakklepesek_BerkesKristof\Sakklepesek_BerkesKristof\obj\Debug\Sakklepesek_BerkesKristof.pdb
