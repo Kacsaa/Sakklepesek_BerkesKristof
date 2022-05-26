@@ -23,7 +23,18 @@ namespace Sakklepesek_BerkesKristof
         public MainWindow()
         {
             InitializeComponent();
+            TablaGeneralas();
+        }
 
+        private void Kattintas(object sender, RoutedEventArgs e)
+        {
+            int col = 0;
+            Button mezo = sender as Button;
+            mezo.Background = Brushes.Red;
+        }
+
+        public void TablaGeneralas()
+        {
             for (int i = 0; i < 8; i++)
             {
                 tabla.RowDefinitions.Add(new RowDefinition());
@@ -34,27 +45,31 @@ namespace Sakklepesek_BerkesKristof
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    Rectangle mezo = new Rectangle();
-                    tabla.Children.Add(mezo);
+                    Button mezo = new Button();
                     if (i % 2 == 1 && j % 2 == 0)
                     {
-                        mezo.Fill = Brushes.White;
-                        mezo.Stroke = Brushes.Black;
+                        mezo.Background = Brushes.White;
+
                     }
                     else if (i % 2 == 0 && j % 2 == 1)
                     {
-                        mezo.Fill = Brushes.White;
-                        mezo.Stroke = Brushes.Black;
+                        mezo.Background = Brushes.White;
+
                     }
                     else
                     {
-                        mezo.Fill = Brushes.Black;
-                        mezo.Stroke = Brushes.Black;
+                        mezo.Background = Brushes.Black;
+
                     }
                     Grid.SetRow(mezo, j);
                     Grid.SetColumn(mezo, i);
+                    mezo.Click += Kattintas;
+                    tabla.Children.Add(mezo);
+
+
                 }
             }
+            
         }
     }
 }
