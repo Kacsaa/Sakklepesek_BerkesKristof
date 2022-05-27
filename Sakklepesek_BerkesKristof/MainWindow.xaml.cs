@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Sakklepesek_BerkesKristof
 {
@@ -28,12 +29,35 @@ namespace Sakklepesek_BerkesKristof
             InitializeComponent();
             TablaGeneralas();
         }
-
+        private void Cbox()
+        {
+            //cbox.Items.Add();
+        }
         private void Kattintas(object sender, RoutedEventArgs e)
         {
             //int col = 0;
-            Button mezo = sender as Button;
-            mezo.Background = Brushes.Red;
+            Button aktualis = sender as Button;
+            int x = -1, y = -1;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (mezok[i,j].Equals(aktualis))
+                    {
+                        x = i;
+                        y = j;
+                    }
+                    if ((i+j)%2 == 0)
+                    {
+                        mezok[i, j].Background = Brushes.White;
+                    }
+                    else
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                }
+            }
+            aktualis.Background = Brushes.Red;
         }
 
         public void TablaGeneralas()
@@ -49,14 +73,11 @@ namespace Sakklepesek_BerkesKristof
                 for (int j = 0; j < 1; j++)
                 {
                     Label koord = new Label();
-                    if (i % 2 == 1 && j % 2 == 0)
+                    if ((i + j) % 2 == 0)
                     {
                         koord.Content = "A";
                     }
-                    else if (i % 2 == 0 && j % 2 == 1)
-                    {
-                        koord.Content = "A";
-                    }
+
                     else
                     {
                         koord.Content = "1";
@@ -68,16 +89,12 @@ namespace Sakklepesek_BerkesKristof
                 for (int j = 0; j < 8; j++)
                 {
                     Button mezo = new Button();
-                    if (i % 2 == 1 && j % 2 == 0)
+                    if ((i + j) % 2 == 0)
                     {
                         mezo.Background = Brushes.White;
 
                     }
-                    else if (i % 2 == 0 && j % 2 == 1)
-                    {
-                        mezo.Background = Brushes.White;
 
-                    }
                     else
                     {
                         mezo.Background = Brushes.Black;
