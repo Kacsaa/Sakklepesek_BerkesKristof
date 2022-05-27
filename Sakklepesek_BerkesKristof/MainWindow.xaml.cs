@@ -44,6 +44,25 @@ namespace Sakklepesek_BerkesKristof
                 tabla.ColumnDefinitions.Add(new ColumnDefinition());
             }
 
+            for (int i = 0; i < 1; i++)
+            {
+                for (int j = 0; j < 1; j++)
+                {
+                    Label koord = new Label();
+                    if (i % 2 == 1 && j % 2 == 0)
+                    {
+                        koord.Content = "A";
+                    }
+                    else if (i % 2 == 0 && j % 2 == 1)
+                    {
+                        koord.Content = "A";
+                    }
+                    else
+                    {
+                        koord.Content = "1";
+                    }
+                }
+            }
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)

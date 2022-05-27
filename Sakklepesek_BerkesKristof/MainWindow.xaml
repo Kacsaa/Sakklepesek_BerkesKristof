@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Sakklepesek_BerkesKristof"
         mc:Ignorable="d"
         Title="Sakklépések - Berkes Kristóf" Height="600" Width="450">
-    <Grid Margin="0,221,35,0">
-        <Grid Name="tabla" Margin="36,-134,10,124"></Grid>
+    <Grid>
+        <ComboBox Name="cbox" Margin="30,10,218,518" ></ComboBox>
+        <Label Name="koordinata" Margin="30,515,30,10"></Label>
+        <Grid Name="tabla" Margin="30,100,30,70"></Grid>
     </Grid>
 </Window>
