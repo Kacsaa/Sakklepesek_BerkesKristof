@@ -16,9 +16,6 @@ using System.IO;
 
 namespace Sakklepesek_BerkesKristof
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         Button[,] mezok = new Button[8,8];
