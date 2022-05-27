@@ -29,7 +29,13 @@ namespace Sakklepesek_BerkesKristof
         }
         public void Cbox()
         {
-            cbox.Items.Add("gyalog");
+            cbox.Items.Add("gyalogfeh");
+            cbox.Items.Add("gyalogfek");
+            cbox.Items.Add("huszár");
+            cbox.Items.Add("futó");
+            cbox.Items.Add("bástya");
+            cbox.Items.Add("király");
+            cbox.Items.Add("királynő");
         }
         private void Kattintas(object sender, RoutedEventArgs e)
         {

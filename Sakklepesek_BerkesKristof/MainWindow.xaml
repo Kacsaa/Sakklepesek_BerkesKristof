@@ -8,7 +8,7 @@
         ResizeMode="NoResize"
         Title="Sakklépések - Berkes Kristóf" Height="600" Width="450">
     <Grid>
-        <ComboBox Name="cbox" Margin="30,10,218,518"></ComboBox>
+        <ComboBox x:Name="cbox" Margin="30,10,218,518"></ComboBox>
         <Label Name="koordinata" Margin="30,515,30,10"></Label>
         <Grid Name="tabla" Margin="30,100,30,70"></Grid>
     </Grid>
