@@ -20,6 +20,9 @@ namespace Sakklepesek_BerkesKristof
     /// </summary>
     public partial class MainWindow : Window
     {
+        int colw = 1;
+        int colb = 2;
+        Button[,] mezok = new Button[8,8];
         public MainWindow()
         {
             InitializeComponent();
@@ -28,7 +31,7 @@ namespace Sakklepesek_BerkesKristof
 
         private void Kattintas(object sender, RoutedEventArgs e)
         {
-            int col = 0;
+            //int col = 0;
             Button mezo = sender as Button;
             mezo.Background = Brushes.Red;
         }
@@ -61,10 +64,11 @@ namespace Sakklepesek_BerkesKristof
                         mezo.Background = Brushes.Black;
 
                     }
-                    Grid.SetRow(mezo, j);
-                    Grid.SetColumn(mezo, i);
+                    mezok[i, j] = mezo;
+                    Grid.SetRow(mezok[i,j], j);
+                    Grid.SetColumn(mezok[i,j], i);
                     mezo.Click += Kattintas;
-                    tabla.Children.Add(mezo);
+                    tabla.Children.Add(mezok[i,j]);
 
 
                 }
