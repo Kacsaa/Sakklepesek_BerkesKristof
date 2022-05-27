@@ -21,17 +21,15 @@ namespace Sakklepesek_BerkesKristof
     /// </summary>
     public partial class MainWindow : Window
     {
-        int colw = 1;
-        int colb = 2;
         Button[,] mezok = new Button[8,8];
         public MainWindow()
         {
             InitializeComponent();
             TablaGeneralas();
         }
-        private void Cbox()
+        public void Cbox()
         {
-            //cbox.Items.Add();
+            cbox.Items.Add("gyalog");
         }
         private void Kattintas(object sender, RoutedEventArgs e)
         {

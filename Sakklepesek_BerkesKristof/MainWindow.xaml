@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sakklepesek_BerkesKristof"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Sakklépések - Berkes Kristóf" Height="600" Width="450">
     <Grid>
-        <ComboBox Name="cbox" Margin="30,10,218,518" ></ComboBox>
+        <ComboBox Name="cbox" Margin="30,10,218,518"></ComboBox>
         <Label Name="koordinata" Margin="30,515,30,10"></Label>
         <Grid Name="tabla" Margin="30,100,30,70"></Grid>
     </Grid>
